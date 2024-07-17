@@ -249,7 +249,7 @@
     // Generate HTML from Object
     for (let chapter_idx = 0; chapter_idx < chapters.length; ++chapter_idx ) {
       // Add Chapter Headings
-      const $title = $('<h3 />').append(`Chapter-${chapter_idx + 1}：${chapters[chapter_idx]}`);
+      const $title = $('<h3 />').append(`${chapter_idx + 1}：${chapters[chapter_idx]}`);
       $('#accordion').append($title);
 
       // Added Quest List Base
