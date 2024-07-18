@@ -15,7 +15,7 @@
   $(function() {
     /* Quest Type */
     const emg = 'Urgent';
-    const matl = 'Collection';
+    const matl = 'Gather';
     const hunt = 'Defeat';
     /* List of Chapters */
     const chapters = [
@@ -47,29 +47,29 @@
     const quests = [
       /* The First Hunt */
       [
-        { seq: 0, type: hunt, target: 'Slay monster', cnt: 3 },
+        { seq: 0, type: hunt, target: 'Slay Monster', cnt: 3 },
         { seq: 1, type: hunt, target: 'Slay Great Jagras', cnt: 1 }
       ],
       /* Aiming for Pro */
       [
-        { seq: 0, type: hunt, target: 'Slay monster', cnt: 3 },
+        { seq: 0, type: hunt, target: 'Slay Monster', cnt: 3 },
         { seq: 1, type: emg, target: 'Slay Kulu-Ya-Ku (★)', cnt: 1 }
       ],
       /* The Secret to Strength */
       [
         { seq: 0, type: matl, target: 'Upgrade Equipment - Weapon', cnt: 1 },
         { seq: 0, type: matl, target: 'Gather items at gathering point', cnt: 3 },
-        { seq: 0, type: hunt, target: 'Slay monster', cnt: 3 },
+        { seq: 0, type: hunt, target: 'Slay Monster', cnt: 3 },
         { seq: 1, type: emg, target: 'Slay Pukei-Pukei (★)', cnt: 1 }
       ],
       /* Reviewing the Basics */
       [
         { seq: 0, type: matl, target: 'Gather items at gathering point', cnt: 3 },
         { seq: 0, type: hunt, target: 'Slay Large Monster', cnt: 1 },
-        { seq: 1, type: hunt, target: 'Slay monster with Jagras Sword and Shield', cnt: 1 },
+        { seq: 1, type: hunt, target: 'Slay Monster with Jagras Sword and Shield', cnt: 1 },
         { seq: 1, type: hunt, target: 'Slay Large Monster', cnt: 1 },
         { seq: 1, type: matl, target: 'Gather items at gathering point', cnt: 3 },
-        { seq: 2, type: hunt, target: 'Slay monster with Kulu Head Armor', cnt: 1 },
+        { seq: 2, type: hunt, target: 'Slay Monster with Kulu Head Armor', cnt: 1 },
         { seq: 2, type: hunt, target: 'Slay Large Monster', cnt: 3 },
         { seq: 2, type: matl, target: 'Gather items at gathering point', cnt: 3 },
         { seq: 3, type: emg, target: 'Slay Barroth (★)', cnt: 1 }
@@ -77,12 +77,12 @@
       /* Apprenticeship Training */
       [
         { seq: 0, type: hunt, target: 'Slay Large Monster', cnt: 1 },
-        { seq: 0, type: hunt, target: 'Slay monster', cnt: 3 },
+        { seq: 0, type: hunt, target: 'Slay Monster', cnt: 3 },
         { seq: 0, type: matl, target: 'Gather items at gathering point', cnt: 3 },
         { seq: 1, type: hunt, target: 'Slay Large Monster', cnt: 2 },
         { seq: 1, type: matl, target: 'Gather items at gathering point', cnt: 3 },
         { seq: 2, type: hunt, target: 'Slay Large Monster', cnt: 3 },
-        { seq: 2, type: hunt, target: 'Slay monster', cnt: 5 },
+        { seq: 2, type: hunt, target: 'Slay Monster', cnt: 5 },
         { seq: 2, type: matl, target: 'Gather items at gathering point', cnt: 5 }
       ],
       /* The Final Test */
@@ -99,15 +99,15 @@
       [
         { seq: 0, type: hunt, target: 'Slay Small Monster', cnt: 5 },
         { seq: 0, type: hunt, target: 'Slay Large Monster', cnt: 5 },
-        { seq: 1, type: hunt, target: 'Slay monster with Great Sword', cnt: 1 },
-        { seq: 1, type: hunt, target: 'Slay monster', cnt: 10 },
+        { seq: 1, type: hunt, target: 'Slay Monster with Great Sword', cnt: 1 },
+        { seq: 1, type: hunt, target: 'Slay Monster', cnt: 10 },
         { seq: 1, type: matl, target: 'Gather items at gathering point', cnt: 10 },
         { seq: 2, type: emg, target: 'Slay Great Girros (★★)', cnt: 1 }
       ],
       /* Lurker of the Forest */
       [
         { seq: 0, type: hunt, target: 'Slay Large Monster', cnt: 5 },
-        { seq: 0, type: hunt, target: 'Slay monster', cnt: 10 },
+        { seq: 0, type: hunt, target: 'Slay Monster', cnt: 10 },
         { seq: 1, type: emg, target: 'Slay Kulu-Ya-Ku (★★)', cnt: 1 },
         { seq: 2, type: hunt, target: 'Slay Great Jagras', cnt: 2 },
         { seq: 2, type: matl, target: 'Gather items at gathering point', cnt: 10 },
@@ -117,115 +117,115 @@
       [
         { seq: 0, type: matl, target: 'Gather Unique Mushroom from Vegetation', cnt: 10 },
         { seq: 0, type: hunt, target: 'Slay Large Monster', cnt: 5 },
-        { seq: 0, type: hunt, target: 'Slay monster', cnt: 10 },
+        { seq: 0, type: hunt, target: 'Slay Monster', cnt: 10 },
         { seq: 1, type: hunt, target: 'Slay Large Monster', cnt: 5 },
-        { seq: 1, type: hunt, target: 'Slay monster', cnt: 10 },
+        { seq: 1, type: hunt, target: 'Slay Monster', cnt: 10 },
         { seq: 1, type: matl, target: 'Gather items at gathering point', cnt: 10 },
         { seq: 2, type: hunt, target: 'Slay Pukei-Pukei', cnt: 2 },
-        { seq: 2, type: hunt, target: 'Slay monster', cnt: 10 },
+        { seq: 2, type: hunt, target: 'Slay Monster', cnt: 10 },
         { seq: 2, type: matl, target: 'Gather items at gathering point', cnt: 10 },
         { seq: 3, type: emg, target: 'Slay Tobi-Kadachi (★★)', cnt: 1 }
       ],
       /* A Fluffy Suspect */
       [
         { seq: 0, type: hunt, target: 'Slay Large Monster', cnt: 5 },
-        { seq: 0, type: hunt, target: 'Slay monster', cnt: 10 },
+        { seq: 0, type: hunt, target: 'Slay Monster', cnt: 10 },
         { seq: 0, type: matl, target: 'Gather items at gathering point', cnt: 10 },
         { seq: 1, type: emg, target: 'Slay Kulu-Ya-Ku', cnt: 3 },
-        { seq: 2, type: hunt, target: 'Slay monster in Desert', cnt: 5 },
+        { seq: 2, type: hunt, target: 'Slay Monster in Desert', cnt: 5 },
         { seq: 2, type: hunt, target: 'Slay Large Monster', cnt: 5 },
         { seq: 3, type: matl, target: 'Obtain Felyne Food from gathering points', cnt: 10 },
         { seq: 3, type: hunt, target: 'Slay Large Monster', cnt: 5 },
-        { seq: 3, type: hunt, target: 'Slay monster', cnt: 10 },
+        { seq: 3, type: hunt, target: 'Slay Monster', cnt: 10 },
         { seq: 4, type: emg, target: 'Slay Paolumu (★★★)', cnt: 1 }
       ],
       /* The Gluttonous Mastermind */
       [
         { seq: 0, type: hunt, target: 'Slay Large Monster', cnt: 5 },
-        { seq: 0, type: hunt, target: 'Slay monster', cnt: 10 },
+        { seq: 0, type: hunt, target: 'Slay Monster', cnt: 10 },
         { seq: 0, type: matl, target: 'Gather items at gathering point', cnt: 10 },
-        { seq: 1, type: hunt, target: 'Slay monster in Swamp', cnt: 5 },
+        { seq: 1, type: hunt, target: 'Slay Monster in Swamp', cnt: 5 },
         { seq: 1, type: matl, target: 'Gather items at gathering point', cnt: 10 },
         { seq: 2, type: emg, target: 'Slay Barroth (★★★)', cnt: 1 },
         { seq: 3, type: hunt, target: 'Slay Large Monster', cnt: 5 },
-        { seq: 3, type: hunt, target: 'Slay monster', cnt: 10 },
+        { seq: 3, type: hunt, target: 'Slay Monster', cnt: 10 },
         { seq: 3, type: matl, target: 'Gather items at gathering point', cnt: 10 },
         { seq: 4, type: emg, target: 'Slay Jyuratodus (★★★)', cnt: 1 }
       ],
       /* Owner of the Footprints */
       [
         { seq: 0, type: hunt, target: 'Slay Large Monster', cnt: 5 },
-        { seq: 0, type: hunt, target: 'Slay monster', cnt: 10 },
+        { seq: 0, type: hunt, target: 'Slay Monster', cnt: 10 },
         { seq: 0, type: matl, target: 'Gather items at gathering point', cnt: 10 },
         { seq: 1, type: hunt, target: 'Slay Great Girros', cnt: 2 },
-        { seq: 1, type: hunt, target: 'Slay monster', cnt: 10 },
+        { seq: 1, type: hunt, target: 'Slay Monster', cnt: 10 },
         { seq: 1, type: matl, target: 'Gather items at gathering point', cnt: 10 },
         { seq: 2, type: emg, target: 'Slay Pukei-Pukei (★★★★)', cnt: 1 },
         { seq: 3, type: matl, target: 'Gather Odd Monster Tracks from mining outcrops', cnt: 10 },
         { seq: 3, type: hunt, target: 'Slay Large Monster', cnt: 5 },
-        { seq: 3, type: hunt, target: 'Slay monster', cnt: 10 },
+        { seq: 3, type: hunt, target: 'Slay Monster', cnt: 10 },
         { seq: 4, type: emg, target: 'Slay Barroth (★★★★)', cnt: 1 }
       ],
       /* Raging Flames */
       [
-        { seq: 0, type: hunt, target: 'Slay monster in Forest', cnt: 5 },
+        { seq: 0, type: hunt, target: 'Slay Monster in Forest', cnt: 5 },
         { seq: 0, type: matl, target: 'Gather items at gathering point', cnt: 10 },
         { seq: 1, type: hunt, target: 'Slay Tobi-Kadachi', cnt: 2 },
-        { seq: 1, type: hunt, target: 'Slay monster', cnt: 10 },
+        { seq: 1, type: hunt, target: 'Slay Monster', cnt: 10 },
         { seq: 1, type: matl, target: 'Gather items at gathering point', cnt: 10 },
         { seq: 2, type: hunt, target: 'Slay Large Monster', cnt: 5 },
-        { seq: 2, type: hunt, target: 'Slay monster', cnt: 10 },
+        { seq: 2, type: hunt, target: 'Slay Monster', cnt: 10 },
         { seq: 3, type: emg, target: 'Slay Anjanath (★★★★)', cnt: 1 }
       ],
       /* Bright Lights and Beasts */
       [
-        { seq: 0, type: hunt, target: 'Slay monster in Desert', cnt: 5 },
+        { seq: 0, type: hunt, target: 'Slay Monster in Desert', cnt: 5 },
         { seq: 0, type: matl, target: 'Slay Large Monster', cnt: 5 },
         { seq: 1, type: emg, target: 'Slay Kulu-Ya-Ku (★★★★)', cnt: 2 },
         { seq: 2, type: hunt, target: 'Slay Large Monster', cnt: 5 },
-        { seq: 2, type: hunt, target: 'Slay monster', cnt: 10 },
+        { seq: 2, type: hunt, target: 'Slay Monster', cnt: 10 },
         { seq: 3, type: emg, target: 'Slay Rathian (★★★★)', cnt: 1 }
       ],
       /* Glacial Gales */
       [
         { seq: 0, type: hunt, target: 'Slay Large Monster', cnt: 5 },
-        { seq: 0, type: hunt, target: 'Slay monster', cnt: 10 },
+        { seq: 0, type: hunt, target: 'Slay Monster', cnt: 10 },
         { seq: 0, type: matl, target: 'Gather items at gathering point', cnt: 10 },
         { seq: 1, type: emg, target: 'Slay Paolumu (★★★★★)', cnt: 1 },
         { seq: 2, type: hunt, target: 'Slay Anjanath', cnt: 2 },
-        { seq: 2, type: hunt, target: 'Slay monster', cnt: 10 },
+        { seq: 2, type: hunt, target: 'Slay Monster', cnt: 10 },
         { seq: 2, type: matl, target: 'Gather items at gathering point', cnt: 10 },
         { seq: 3, type: matl, target: 'Obtain Scale-Like Object from gathering points', cnt: 10 },
         { seq: 3, type: hunt, target: 'Slay Large Monster', cnt: 5 },
-        { seq: 3, type: hunt, target: 'Slay monster', cnt: 10 },
+        { seq: 3, type: hunt, target: 'Slay Monster', cnt: 10 },
         { seq: 4, type: emg, target: 'Slay Legiana (★★★★★)', cnt: 1 }
       ],
       /* The Looming Threat */
       [
         { seq: 0, type: hunt, target: 'Slay Large Monster', cnt: 5 },
-        { seq: 0, type: hunt, target: 'Slay monster', cnt: 10 },
+        { seq: 0, type: hunt, target: 'Slay Monster', cnt: 10 },
         { seq: 0, type: matl, target: 'Gather items at gathering point', cnt: 10 },
         { seq: 1, type: hunt, target: 'Slay Large Monster', cnt: 5 },
-        { seq: 1, type: hunt, target: 'Slay monster', cnt: 10 },
+        { seq: 1, type: hunt, target: 'Slay Monster', cnt: 10 },
         { seq: 2, type: hunt, target: 'Slay Large Monster', cnt: 5 },
-        { seq: 2, type: hunt, target: 'Slay monster', cnt: 10 },
+        { seq: 2, type: hunt, target: 'Slay Monster', cnt: 10 },
         { seq: 2, type: matl, target: 'Gather items at gathering point', cnt: 10 },
         { seq: 3, type: hunt, target: 'Slay Rathian', cnt: 2 },
-        { seq: 3, type: hunt, target: 'Slay monster', cnt: 10 },
+        { seq: 3, type: hunt, target: 'Slay Monster', cnt: 10 },
         { seq: 4, type: emg, target: 'Slay Diablos (★★★★★)', cnt: 1 }
       ],
       /* The Rumbling Heavens */
       [
         { seq: 0, type: hunt, target: 'Slay Large Monster', cnt: 5 },
-        { seq: 0, type: hunt, target: 'Slay monster', cnt: 10 },
+        { seq: 0, type: hunt, target: 'Slay Monster', cnt: 10 },
         { seq: 0, type: matl, target: 'Gather items at gathering point', cnt: 10 },
         { seq: 1, type: hunt, target: 'Slay Legiana', cnt: 2 },
         { seq: 1, type: hunt, target: 'Slay Large Monster', cnt: 5 },
         { seq: 1, type: matl, target: 'Gather items at gathering point', cnt: 10 },
-        { seq: 2, type: hunt, target: 'Slay monster in Forest', cnt: 5 },
+        { seq: 2, type: hunt, target: 'Slay Monster in Forest', cnt: 5 },
         { seq: 2, type: matl, target: 'Gather items at gathering point', cnt: 10 },
         { seq: 3, type: hunt, target: 'Slay Large Monster', cnt: 5 },
-        { seq: 3, type: hunt, target: 'Slay monster', cnt: 10 },
+        { seq: 3, type: hunt, target: 'Slay Monster', cnt: 10 },
         { seq: 3, type: matl, target: 'Gather items at gathering point', cnt: 10 }
       ],
       /* Sunderer of the Skies */
@@ -261,7 +261,7 @@
         { seq: 3, type: matl, target: 'Gather Bonepile', cnt: 5 },
         { seq: 3, type: hunt, target: 'Slay Large Monster', cnt: 3 },
         { seq: 3, type: matl, target: 'Gather items at gathering point', cnt: 5 },
-        { seq: 4, type: emg, target: 'Slay Radobaan', cnt: 1 }
+        { seq: 4, type: emg, target: 'Slay Radobaan (6★)', cnt: 1 }
       ],
       /* The Art of Strategy */
       [
@@ -270,7 +270,11 @@
         { seq: 0, type: matl, target: 'Gather items at gathering point', cnt: 10 },
         { seq: 1, type: hunt, target: 'Slay Great Girros', cnt: 2 },
         { seq: 1, type: hunt, target: 'Slay Large Montser', cnt: 5 },
-        { seq: 1, type: matl, target: 'Gather items at gathering point', cnt: 10 }
+        { seq: 1, type: matl, target: 'Gather items at gathering point', cnt: 10 },
+        { seq: 2, type: emg, target: 'Slay Pukei-Pukei (6★)', cnt: 1 },
+        { seq: 3, type: hunt, target: 'Slay Barroth', cnt: 2 },
+        { seq: 3, type: hunt, target: 'Slay Monster', cnt: 10 },
+        { seq: 3, type: matl, target: 'Gather items at gathering point', cnt: 10 }
       ]
     ];
     // Generate HTML from Object
