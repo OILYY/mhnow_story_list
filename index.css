@@ -22,6 +22,7 @@ h1 {
   grid-column-end: span 5;
 }
 .chapter-quest, .quest-summary {
+  background-color: gold;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
