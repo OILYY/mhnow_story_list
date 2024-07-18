@@ -28,10 +28,10 @@ h1 {
   gap: .4rem;
 }
 .chapter-quest:nth-child(odd) {
-  background-color: linen;
+  background-color: gold;
 }
 .chapter-quest:nth-child(even) {
-  background-color: bisque;
+  background-color: limegreen;
 }
 .quest-seq {
   display: flex;
@@ -53,7 +53,7 @@ h1 {
   background-color: red;
 }
 .quest-matl {
-  color: white;
+  color: black;
   background-color: yellow;
 }
 .quest-hunt {
