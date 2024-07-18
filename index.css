@@ -22,7 +22,6 @@ h1 {
   grid-column-end: span 5;
 }
 .chapter-quest, .quest-summary {
-  background-color: gold;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -42,6 +41,7 @@ h1 {
   font-weight: bold;
 }
 .quest-summary {
+  background-color: gold;
   margin: .3rem 0 .3rem;
 }
 .quest-type {
