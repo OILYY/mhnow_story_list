@@ -21,10 +21,8 @@ h1 {
   grid-column-start: 1;
   grid-column-end: span 5;
 }
-.chapter_idx {
-  background-color: gold;
-}
 .chapter-quest, .quest-summary {
+  background-color: gold;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
