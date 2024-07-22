@@ -46,7 +46,8 @@
       'High Rank: Chapter 6: The Final Trial',
       'High Rank: Chapter 7: A Festive Announcement',
       'High Rank: Chapter 8: Festival in a Frenzy',
-      'High Rank: Chapter 9: Dampening the Mood'
+      'High Rank: Chapter 9: Dampening the Mood',
+      'High Rank: Chapter 10: Food Fight'
     ];
     /* List of Quests */
     const quests = [
@@ -355,8 +356,15 @@
         { seq: 2, type: matl, target: 'Gather items at gathering point', cnt: 12 },
         { seq: 3, type: hunt, target: 'Slay Monster with Effective Element Weapon', cnt: 5 },
         { seq: 3, type: hunt, target: 'Slay Large Monster', cnt: 10 },
-        { seq: 3, type: hunt, target: 'Slay Monster', cnt: 12 }
-      ]
+        { seq: 3, type: hunt, target: 'Slay Monster', cnt: 12 },
+        { seq: 4, type: emg, target: 'Slay Coral Pukei-Pukei', cnt: 1 }
+      ],
+      /* Food Fight */
+      [
+        { seq: 0, type: matl, target: 'Gather at Vegetation', cnt: 10 },
+        { seq: 0, type: hunt, target: 'Slay Large Monster', cnt: 10 },
+        { seq: 0, type: hunt, target: 'Slay Monster', cnt: 12 }
+      ],
     ];
     // Generate HTML from Object
     for (let chapter_idx = 0; chapter_idx < chapters.length; ++chapter_idx ) {
